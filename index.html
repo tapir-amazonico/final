@@ -212,8 +212,8 @@
 
         <main class="pb-5">
             <section>
-                <img src="files/tapir_ilustration_01.jpg" loading=“lazy” class="d-none d-md-block w-100" alt="Es una ilustración de un tapir Amazónico" />
-                <img src="files/tapir_ilustration_02.jpg" loading=“lazy” class="d-md-none w-100" alt="Es una ilustración de un tapir Amazónico hasta la mitad" />
+                <img src="files/tapir_ilustration_01.jpg" class="d-none d-md-block w-100" alt="Es una ilustración de un tapir Amazónico" />
+                <img src="files/tapir_ilustration_02.jpg" class="d-md-none w-100" alt="Es una ilustración de un tapir Amazónico hasta la mitad" />
                 <div class="text-center">
                     <div class="px-3 py-2 rounded-pill shadow-sm mx-auto" style="width: 200px; background: #8e8e23;">
                         <audio id="elAudio">
@@ -257,8 +257,12 @@
                 </div>
             </section>
 
-            <section class="container">
-                <div class="row">
+<!-- JARDINERO -->
+
+            
+
+            <section class="container-fluid g-0">
+                <div class="row g-0">
                     <div class="col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
                         <h3 class="text-center my-3">Jardinero de la Selva</h3>
 
@@ -267,25 +271,42 @@
                             lugar.
                         </p>
 
-                        <div class="row d-flex align-items-end text-center mb-5">
-                            <div class="col">
-                                <object class="w-100" data="files/caca.svg" type="image/svg+xml"></object>
-                                <p></p>
+                        <!--CARRUSEL-->
+
+                        <div id="carruselBrotes" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carruselBrotes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carruselBrotes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carruselBrotes" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="col">
-                                <object class="w-100" data="files/brote.svg" type="image/svg+xml"></object>
-                                <p></p>
-                            </div>
-                            <div class="col">
-                                <object class="w-100" data="files/arbol.svg" type="image/svg+xml"></object>
-                                <p></p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="1000">
+                                    <object class="d-block w-100" data="files/brote_1.png"></object>
+                                    <div class="carousel-caption">
+                                        
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <object class="d-block w-100" data="files/brote_2.png"></object>
+                                    <div class="carousel-caption">
+                                        
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="1000">
+                                    <object class="d-block w-100" data="files/brote_3.png"></object>
+                                    <div class="carousel-caption">
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Data -->
+
+
+<!-- Data -->
 
             <section class="container">
                 <div class="row">
@@ -322,8 +343,8 @@
                         <h3 class="text-center my-5">La fisonomía del Tapir Amazónico</h3>
 
                         <div id="image-compare" class="my-3">
-                            <img src="files/tapir_ilustration_01.jpg" loading=“lazy” alt="Antes" />
-                            <img src="files/tapir_esqueleto.jpg" loading=“lazy” alt="Después" />
+                            <img src="files/tapir_ilustration_01.jpg" alt="Antes" />
+                            <img src="files/tapir_esqueleto.jpg" alt="Después" />
                         </div>
 
                         <p>Marcan con orina su territorio, lo que puede llevarles a pelear entre machos por medio de mordidas en su lomo, patas y pelvis.</p>
@@ -344,21 +365,21 @@
                             </div>
 
                             <div class="col-md-6 mb-3">
-                                <div class="px-5 py-3 shadow-sm rounded-pill" style="background: #8e8e23; background-image: url(files/tapir_03.svg); background-position: 90% center; background-repeat: no-repeat; background-size: 30%;">
+                                <div class="px-5 py-3 shadow-sm rounded-pill" style="background: #8e8e23; background-image: url(files/tapir_02.svg); background-position: 90% center; background-repeat: no-repeat; background-size: 30%;">
                                     <h5 class="text-white-50">Longitud</h5>
                                     <h4 class="text-white">180 - 200 cm</h4>
                                 </div>
                             </div>
 
                             <div class="col-md-6 mb-3">
-                                <div class="px-5 py-3 shadow-sm rounded-pill" style="background: #8e8e23; background-image: url(files/tapir_04.svg); background-position: 90% center; background-repeat: no-repeat; background-size: 30%;">
+                                <div class="px-5 py-3 shadow-sm rounded-pill" style="background: #8e8e23; background-image: url(files/tapir_02.svg); background-position: 90% center; background-repeat: no-repeat; background-size: 30%;">
                                     <h5 class="text-white-50">Longitud cola</h5>
                                     <h4 class="text-white">5 - 10 cm</h4>
                                 </div>
                             </div>
 
                             <div class="col-md-6 mb-3 text-center">
-                                <img src="files/tapir_musculos_c.jpg" loading=“lazy” class="w-75 my-3 mx-auto" alt="Esta es una vista de los musculos del Tapir" />
+                                <img src="files/tapir_musculos_c.jpg" class="w-75 my-3 mx-auto" alt="Esta es una vista de los musculos del Tapir" />
                                 <h4>Cresta / Trompa</h4>
                                 <p class="small">
                                     <strong>La Grupa</strong> o <strong>Cresta Sagital</strong> es un músculo que recubre la vertebra del animal, y le otorga fuerza y resistencia. <strong>La trompa</strong> también llamada Probostide, está
@@ -367,7 +388,7 @@
                             </div>
 
                             <div class="col-md-6 mb-3 text-center">
-                                <img src="files/tapir_pata-hueso_c.jpg" loading=“lazy” class="w-75 my-3 mx-auto" alt="Estos son los huesos de la pata de un Tapir" />
+                                <img src="files/tapir_pata-hueso_c.jpg" class="w-75 my-3 mx-auto" alt="Estos son los huesos de la pata de un Tapir" />
                                 <h4>Patas</h4>
                                 <p class="small">Gracias a sus dedos impares y cubiertos por pezuñas sabemos que es un <strong>perisodactilo</strong> y está relacionado con caballos y rinocerontes.</p>
                             </div>
@@ -438,8 +459,9 @@
                                     <g id="seleccion"></g>
                                 </svg>
                             </div>
-                            
+
                             <div class="col-12" id="texto_subespecie"></div>
+                            
                         </div>
                     </div>
                 </div>
@@ -457,6 +479,52 @@
                     </div>
                 </div>
             </section>
+
+
+<!-- AMENAZA -->
+
+            <section class="container pb-5">
+                <div class="row">
+                    <div class="col-sm-10 col-md-9 col-lg-8 col-xl-7 mx-auto">
+                        <h3 class="text-center my-5">Amenazas</h3>
+
+
+                        <p>El tapir amazónico es muy subestimado, es una especie "paraguas" que protege el medio ambiente, y del que sabemos muy poco.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container col-8">
+                <div class="row">
+                            <div class="col-md-4 mb-3 text-center">
+                                <img src="files/NO_hojas.svg" class="w-75 my-3 mx-auto" alt="Icono de destruccion de habitat" />
+                                
+                                <p class="small">
+                                    <strong>Destrucción</strong> de su hábitat por
+                                    agricultura y deforestación.
+
+                                </p>
+                            </div>
+
+                            <div class="col-md-4 mb-3 text-center">
+                                <img src="files/NO_cabeza.svg" class="w-75 my-3 mx-auto" alt="Icono de caceria" />
+                                
+                                <p> <strong>Caza</strong> ilegal por su piel y carne.</p>
+                            </div>
+
+                            <div class="col-md-4 mb-3 text-center">
+                                <img src="files/NO_patas.svg" class="w-75 my-3 mx-auto" alt="Icono de una pata en peligro" />
+                                
+                                <p> <strong>Atropellos</strong> en carreteras.</p>
+                            </div>
+                        
+                </div>
+            </section>
+
+
+
 
             
         </main>
@@ -484,7 +552,7 @@
                         </a>
                         <div class="modal fade" id="modalImpreso" tabindex="-1" aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
-                                <img src="files/tapir_impreso.jpg" loading=“lazy” class="w-100" alt="infografía impresa grande" />
+                                <img src="files/tapir_impreso.jpg" class="w-100" alt="infografía impresa grande" />
                             </div>
                         </div>
 
